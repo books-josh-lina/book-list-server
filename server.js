@@ -19,7 +19,7 @@ app.use(cors());
 app.get('/test', (req, res) => res.send('Testing 1, 2, 3'));
 
 
-app.get('/', (req, res) => res.sendFile('index.html'));
+app.get('/', (req, res) => res.send(CLIENT_URL));
 
 app.get('/books', (req, res) => {
   client.query(`SELECT *  FROM books;`)
