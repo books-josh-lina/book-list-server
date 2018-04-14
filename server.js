@@ -14,7 +14,7 @@ const CLIENT_URL = 'https://books-josh-lina.github.io/book-list-client/';
 
 // app.use(cors());
 
-// app.get('/test', (req, res) => res.send('Testing 1, 2, 3'));
+app.get('/test', (req, res) => res.send('Testing 1, 2, 3'));
 
 // app.get('/tasks', (req, res) => {
 //   client.query(`SELECT * from tasks;`)
@@ -22,6 +22,6 @@ const CLIENT_URL = 'https://books-josh-lina.github.io/book-list-client/';
 //     .catch(console.error);
 // });
 
-app.get('*', (req, res) => res.redirect(CLIENT_URL));
+// app.get('*', (req, res) => res.redirect(CLIENT_URL));
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
 
