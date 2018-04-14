@@ -14,10 +14,13 @@ client.on('error', err => console.error(err));
 
 app.use(cors());
 
-// app.get('/test', (req, res) => res.send('Testing 1, 2, 3'));
+app.get('/test', (req, res) => res.send('Testing 1, 2, 3'));
+
+
+app.get('/test', (req, res) => res.send('Testing 1, 2, 3'));
 
 app.get('/books', (req, res) => {
-  client.query(`SELECT title from books;`)
+  client.query(`SELECT *  FROM books;`)
     .then(results => res.send(results.rows))
     .catch(console.error);
 });
