@@ -14,13 +14,13 @@ client.on('error', err => console.error(err));
 
 app.use(cors());
 
-// app.get('/test', (req, res) => res.send('Testing 1, 2, 3'));
+app.get('/test', (req, res) => res.send('Testing 1, 2, 3'));
 
-app.get('/books', (req, res) => {
-  client.query(`SELECT title from books;`)
-    .then(results => res.send(results.rows))
-    .catch(console.error);
-});
+// app.get('/books', (req, res) => {
+//   client.query(`SELECT title from books;`)
+//     .then(results => res.send(results.rows))
+//     .catch(console.error);
+// });
 
 // app.get('*', (req, res) => res.redirect(CLIENT_URL));
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
