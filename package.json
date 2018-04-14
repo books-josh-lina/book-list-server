@@ -1,0 +1,30 @@
+{
+  "name": "book-list-server",
+  "version": "1.0.0",
+  "description": "josh-lina-books",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/books-josh-lina/book-list-server.git"
+  },
+  "keywords": [
+    "books",
+    "josh",
+    "lina"
+  ],
+  "author": "josh & lina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/books-josh-lina/book-list-server/issues"
+  },
+  "homepage": "https://github.com/books-josh-lina/book-list-server#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "pg": "^7.4.1"
+  }
+}
